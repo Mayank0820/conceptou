@@ -1,0 +1,128 @@
+
+  .blog-title{
+    font-size:60px;
+    padding:20px 0px;
+  }
+
+  .blog-container{
+    width:90%;
+    margin:auto;
+  }
+
+  
+  /* Remove extra left and right margins, due to padding */
+  .blog-row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .blog-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 700px) {
+    
+   .blog-container{
+    width: 100%;
+  }
+    
+    .blog-column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .blog-card {
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  .blog-card .blog-profile{
+     border-radius:10px;
+     transition: 0.2s;
+  }
+  .blog-card:hover .blog-profile{
+    transform:scale(1.4);
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
+  }
+  
+  .blog-card .blog-content{
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+  }
+  .blog-card .blog-content .blog-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #fbbf24;
+    transition:1s;
+    
+    z-index:1;
+    padding:10px;
+  }
+  
+  .from-left{
+    top:0;
+    left:-100%;
+  }
+  .blog-card:hover .blog-content .from-left {
+     left:0%;
+  }
+  
+  .from-bottom{
+    top:100%;
+    left:0;
+  }
+  .blog-card:hover .blog-content .from-bottom {
+     top:0%;
+  }
+  
+  .from-right{
+    top:0%;
+    right:-100%;
+  }
+  .blog-card:hover .blog-content .from-right {
+     right:0;
+  }
+  
+  .blog-card .blog-content .blog-back h3{
+    font-size:15px;
+    letter-spacing:2px;
+  }
+  .blog-card .blog-content .blog-back .tem-img{
+    border-radius:100%;
+  }
+  
+  .blog-card .blog-content .blog-back .des{
+    font-size:13px;
+    padding:20px 0px;
+  }
+  .blog-card .blog-content .blog-back .social-icon{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+  }
+  .blog-card .blog-content .blog-back .social-icon li{
+    display:inline-block;
+  }
+  
+  .blog-card .blog-content .blog-back .social-icon li a{
+    display:block;
+    background:#333;
+    color:#fff;
+    width:40px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    border-radius:100%;
+  }
+  
+  

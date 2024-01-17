@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth" dir="ltr">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Conceptou - Contact Us</title>
+
+        <link rel="shortcut icon" href="assets/images/conceptouuuu_transparent-removebg-preview.png" type="image/x-icon">
+
+        <!-- Main Css -->
+        <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+
+        <style>
+            .trail {
+                position: absolute;
+                height: 6px;
+                width: 6px;
+                border-radius: 3px;
+                background: grey;
+                z-index: 10;
+            }
+        </style>
+
+    </head>
+    
+    <body class="font-figtree text-base text-slate-900 dark:text-white dark:bg-slate-900">
+        
+        
+        <div id="preloader">
+            <div id="status">
+                <div class="logo">
+                    <img src="assets/images/Iphone-spinner-2.gif" class="d-block mx-auto animate-[spin_10s_linear_infinite]" alt="">
+                </div>
+                <div class="justify-content-center">
+                    <div class="text-center">
+                        <h4 class="mb-0 mt-2 text-lg font-semibold">Conceptou</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <p class="h-6 inline-block dark:hidden">Conceptou</p>
+                    <p class="h-6 hidden dark:inline-block">Conceptou</p>
+                </a>
+                <!-- End Logo container-->
+
+                <!-- Start Mobile Toggle -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Mobile Toggle -->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+
+                        <li class="has-submenu parent-menu-item"><a href="index.html">Home</a></li>
+
+                        <li><a href="blogs.html" class="sub-menu-item">Blogs</a></li>
+
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+                
+                        <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
+                    
+                    </ul><!--end navigation menu-->
+                
+                </div><!--end navigation-->
+            
+            </div><!--end container-->
+        
+        </nav><!--end header-->
+        
+        <!-- End Navbar -->
+        
+
+       
+        <!-- Google Map -->
+<div class="container-fluid relative mt-20">
+    <div class="grid grid-cols-1">
+        <div class="w-full leading-[0] border-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.175135209829!2d76.65720287543219!3d30.5160864746895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1704139413304!5m2!1sen!2sin" style="border:0;" class="w-full h-[500px]" allowfullscreen></iframe>
+        </div>
+    </div><!--end grid-->
+</div><!--end container-->
+<!-- Google Map -->
+
+<!-- Start Section-->
+<section class="relative lg:py-24 py-16">
+    <div class="container">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+            <div class="lg:col-span-7 md:col-span-6">
+                <img src="assets/images/contact.svg" alt="">
+            </div>
+
+            <div class="lg:col-span-5 md:col-span-6">
+                <div class="lg:ms-5">
+                    <div class="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700 p-6">
+                        <h3 class="mb-6 text-2xl leading-normal font-semibold">Get in touch !</h3>
+
+                        <form name="myForm" id="myForm" netlify>
+                            <p class="mb-0" id="error-msg"></p>
+                            <div id="simple-msg"></div>
+                            <div class="grid lg:grid-cols-12 lg:gap-6">
+                                <div class="lg:col-span-6 mb-5">
+                                    <label for="name" class="font-semibold">Your Name :</label>
+                                    <input required name="name" id="name" type="text" class="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Name :">
+                                </div>
+
+                                <div class="lg:col-span-6 mb-5">
+                                    <label for="email" class="font-semibold">Your Email :</label>
+                                    <input required name="email" id="email" type="email" class="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Email :">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1">
+                                <div class="mb-5">
+                                    <label for="Phone Number" class="font-semibold">Phone Number :</label>
+                                    <input pattern="[789][0-9]{9}" required name="Phone Number" id="Phone Number" class="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Phone Number :">
+                                </div>
+
+                                <div class="mb-5">
+                                    <label for="comments" class="font-semibold">Message :</label>
+                                    <textarea required name="comments" id="comments" class="form-input w-full py-2 px-3 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2 h-40" placeholder="Message :"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" style="width: 100%;" id="submit" name="send" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-amber-400 hover:bg-amber-500 border-amber-400 hover:border-amber-500 text-white rounded-md">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+    
+    <div class="container lg:mt-24 mt-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
+            <div class="text-center px-6">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <i data-feather="hexagon" class="h-24 w-24 fill-amber-400/5 group-hover:fill-white/10 mx-auto"></i>
+                    <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-amber-400 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                        <i data-feather="phone"></i>
+                    </div>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-lg font-semibold">Call Us</h5>
+                    
+                    <div class="mt-5">
+                        <a href="tel:+919588376534" class="hover:text-amber-400">+91 95883-76534</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center px-6">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <i data-feather="hexagon" class="h-24 w-24 fill-amber-400/5 group-hover:fill-white/10 mx-auto"></i>
+                    <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-amber-400 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                        <i data-feather="mail"></i>
+                    </div>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-lg font-semibold">Email Us</h5>
+                    
+                    <div class="mt-5">
+                        <a href="mailto:conceptou.official@conceptou.com" class="hover:text-amber-400">conceptou.official@conceptou.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center px-6">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <i data-feather="hexagon" class="h-24 w-24 fill-amber-400/5 group-hover:fill-white/10 mx-auto"></i>
+                    <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-amber-400 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                        <i data-feather="map-pin"></i>
+                    </div>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-lg font-semibold">Find Us</h5>
+                    <p class="text-slate-400 mt-3">Chitkara University, Rajpura<br>Punjab, India</p>
+                </div>
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Section-->
+       
+        
+
+        <!-- Start Footer -->
+        <div class="relative">
+            <div class="shape absolute xl:-bottom-[30px] lg:-bottom-[16px] md:-bottom-[13px] -bottom-[5px] start-0 end-0 overflow-hidden z-1 rotate-180 text-white dark:text-slate-900">
+                <svg class="w-full h-auto scale-[2.0] origin-top" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+
+        <footer class="relative bg-gray-900 overflow-hidden">
+            
+            <span class="absolute blur-[200px] w-[300px] h-[300px] rounded-full top-0 -start-[0] bg-gradient-to-tl to-amber-400  from-fuchsia-600 z-0"></span>
+            
+
+            <div class="container relative text-center">
+                <div class="grid grid-cols-1 border-t border-gray-800 dark:border-slate-800">
+                    <div class="py-[30px] px-0">
+                        <div class="grid md:grid-cols-2 items-center">
+                            <div class="md:text-start text-center">
+                                <a href="index.html" style="color: white;" class="text-[22px] focus:outline-none">
+                                    <p>Conceptou</p>
+                                </a>
+                            </div>
+
+                            <ul class="list-none footer-list md:text-end text-center mt-6 md:mt-0">
+                                <li class="inline"><a href="http://linkedin.com/company/Conceptou" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 dark:border-slate-800 rounded-md hover:border-amber-400 dark:hover:border-amber-400 hover:bg-amber-400 dark:hover:bg-amber-400 text-slate-300 hover:text-white"><i data-feather="linkedin" class="h-4 w-4 align-middle" title="Linkedin"></i></a></li>
+                                <li class="inline"><a href="https://www.instagram.com/conceptou_" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 dark:border-slate-800 rounded-md hover:border-amber-400 dark:hover:border-amber-400 hover:bg-amber-400 dark:hover:bg-amber-400 text-slate-300 hover:text-white"><i data-feather="instagram" class="h-4 w-4 align-middle" title="instagram"></i></a></li>
+                                <li class="inline"><a href="mailto:conceptou.official@conceptou.com" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 dark:border-slate-800 rounded-md hover:border-amber-400 dark:hover:border-amber-400 hover:bg-amber-400 dark:hover:bg-amber-400 text-slate-300 hover:text-white"><i data-feather="mail" class="h-4 w-4 align-middle" title="email"></i></a></li>
+                            </ul><!--end icon-->
+                        </div><!--end grid-->
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="py-[30px] px-0 border-t border-gray-800 dark:border-slate-800">
+                <div class="container relative text-center">
+                    <div class="grid grid-cols-1">
+                        <div class="text-center">
+                            <p class="text-gray-400">© <script>document.write(new Date().getFullYear())</script> Conceptou. Design with <i class="mdi mdi-heart text-orange-700"></i> by <a href="https://Kunalbhatia.me/" target="_blank" class="text-reset">Kunal Bhatia</a>.</p>
+                        </div>
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded z-10 bottom-5 end-5 h-9 w-9 text-center bg-amber-400 hover:bg-amber-500 text-white leading-9 justify-center items-center duration-500"><i data-feather="arrow-up" class="h-4 w-4 stroke-[3]"></i></a>
+        <!-- Back to top -->
+
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" for="chk">
+                    <i data-feather="moon" class="h-[18px] w-[18px] text-yellow-500"></i>
+                    <i data-feather="sun" class="h-[18px] w-[18px] text-yellow-500"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+        
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    
+    </body>
+</html>
